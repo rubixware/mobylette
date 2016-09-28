@@ -39,7 +39,7 @@ module Mobylette
       # Private: finds the right template on the filesystem,
       #         using fallback if needed
       #
-      def find_templates(name, prefix, partial, details)
+      def find_templates(name, prefix, partial, details, outside_app_allowed = false)
         # checks if the format has a fallback chain
         if @fallback_formats.has_key?(details[:formats].first)
           details = details.dup
