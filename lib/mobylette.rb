@@ -1,6 +1,8 @@
 #
 # Rails automatic mobile request support
 module Mobylette
+  require 'action_view'
+  require 'action_view/template/resolver'
   require 'mobylette/respond_to_mobile_requests'
   require 'mobylette/resolvers/chained_fallback_resolver'
   require 'mobylette/mobile_user_agents'

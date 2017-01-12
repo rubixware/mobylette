@@ -1,5 +1,3 @@
-require "action_view"
-require "action_view/template/resolver"
 module Mobylette
   module Resolvers
     class ChainedFallbackResolver < ::ActionView::FileSystemResolver
